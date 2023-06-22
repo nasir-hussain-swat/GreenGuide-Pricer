@@ -1,0 +1,149 @@
+
+:root{
+   
+    --sea:#1d9869;
+    --seaDark:#156c4b;
+    --sand:#5ed38d;
+    --sandDark:#D2F6C5;
+    --grey:#F6F7D4;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background: linear-gradient(var(--sand),var(--sandDark));
+
+}
+nav ul {
+
+
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    
+}
+.logo{
+    
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+.logo img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+nav ul li a{
+    text-decoration:none;
+    color:var(--seaDark)
+}
+nav ul li {
+    
+
+    font-size: 20px;
+   
+    /* border: 0.3em solid var(--sand); */
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight:900;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+    margin: auto;
+}
+
+nav ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(var(--sand),var(--sandDark));
+
+    /* background-color: var(--grey); */
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+nav ul li:hover {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+    --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+    --n: 4;
+}
+
+footer {
+    background-color: #1d9869;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 50px;
+    width: 50px;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #fff;
+    margin: 0;
+}
+footer h2{
+    background-color: red;
+}
+
+
+@media (max-width: 600px) {
+    nav ul li {
+        font-size: 10px;
+        font-weight: 900;
+    }
+
+    
+}
