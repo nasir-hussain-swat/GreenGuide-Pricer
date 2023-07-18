@@ -76,7 +76,7 @@ if($id=='Chakdara'){$query = "INSERT INTO chakdara_prices (Tomato,Potato,Onion,G
  
 }
 else if($id=='Batkhela'){
-    $query = "INSERT INTO batkhela_prices (Tomato,Potato,Onion,Garlic,Spinach,Capsicum,Cabbage,Cauliflower,Carrot,Radish,Ladyfinger_Okra,	Eggplant,'Green_Beans',Peas,Bitter_gourd_Karela,Mango,Banana,Apple,Orange,Guava,Grapes,Watermelon,Melon,Pomegranate,Pineapple,Papaya,Strawberry,Plum,Peach,Apricot,Date) 
+    $query = "INSERT INTO batkhela_prices (Tomato,Potato,Onion,Garlic,Spinach,Capsicum,Cabbage,Cauliflower,Carrot,Radish,Ladyfinger_Okra,Eggplant,Green_Beans,Peas,Bitter_gourd_Karela,Mango,Banana,Apple,Orange,Guava,Grapes,Watermelon,Melon,Pomegranate,Pineapple,Papaya,Strawberry,Plum,Peach,Apricot,Date) 
     VALUES($price_mango, $price_banana, $price_apple, $price_orange, $price_guava, $price_grapes, $price_watermelon, $price_melon, $price_pomegranate, $price_pineapple, $price_papaya, $price_strawberry, $price_plum, $price_peach, $price_apricot, $price_tomato, $price_potato, $price_onion, $price_garlic, $price_spinach, $price_capsicum, $price_cabbage, $price_cauliflower, $price_carrot, $price_radish, $price_ladyfinger, $price_eggplant, $price_greenbeans, $price_peas, $price_bittergourd, '$date'
     ) ";
    
